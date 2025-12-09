@@ -1,0 +1,19 @@
+package day02;
+
+public class Sample6 {
+
+    public static void main(String[] args) {
+        String a = "wow";
+        System.out.println(isPalindrom(a)); 
+    }
+
+    static boolean isPalindrom(String str) {
+        String rev = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            rev = str.charAt(i) + rev;
+        }
+
+        return str.equals(rev);
+    }
+}
