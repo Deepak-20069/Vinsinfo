@@ -1,0 +1,14 @@
+package day02;
+
+public class Sample10 {
+	public static void main(String []args) {
+		int year=2012;
+		System.out.println(isleapyear(year));
+	}
+	static boolean isleapyear(int y) {
+		if(y%4==0 && y%100!=0 || y%400==0)
+		return true;
+		return false;
+	}
+
+}
